@@ -31,6 +31,9 @@ export class User {
     @Field()
     password: string;
     
+    @Field()
+    role: string;
+    
     @Field(()=> Avatars, {nullable: true})
     avatar?: Avatars | null
     

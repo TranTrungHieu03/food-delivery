@@ -13,7 +13,7 @@ export class ErrorType {
 }
 
 @ObjectType()
-export class RegisterRepose {
+export class RegisterResponse {
     @Field(() => User, {nullable: true})
     user?: User | any;
 
@@ -22,7 +22,7 @@ export class RegisterRepose {
 }
 
 @ObjectType()
-export class LoginRepose {
+export class LoginResponse {
     @Field(() => User, {nullable: true})
     user?: User | any;
 
