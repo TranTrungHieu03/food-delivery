@@ -5,10 +5,9 @@ import {join} from "path"
 
 async function bootstrap() {
     const app = await NestFactory.create<NestExpressApplication>(UsersModule);
-    app.useStaticAssets(join(__dirname, "..", "public"));
-    app.setBaseViewsDir(join(__dirname, "..", "servers/email-templates"))
-    app.setViewEngine("ejs");
-
+    app.useStaticAssets(join(__dirname, '..', 'public'));
+    app.setBaseViewsDir(join(__dirname, '..', 'servers/email-templates'));
+    app.setViewEngine('ejs');
     await app.listen(4001);
 }
 

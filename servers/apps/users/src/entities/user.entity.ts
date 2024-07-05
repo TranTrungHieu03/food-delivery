@@ -30,6 +30,12 @@ export class User {
 
     @Field()
     password: string;
+
+    @Field({nullable: true})
+    phone_number: number;
+
+    @Field({nullable: true})
+    address: string;
     
     @Field()
     role: string;
